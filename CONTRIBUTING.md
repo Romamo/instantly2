@@ -42,15 +42,15 @@ If you’d like to use the repository from source, you can either install from g
 To install via git:
 
 ```sh
-$ npm install git+ssh://git@github.com:stainless-sdks/instantly2-typescript.git
+$ npm install git+ssh://git@github.com:Romamo/instantly2.git
 ```
 
 Alternatively, to link a local copy of the repo:
 
 ```sh
 # Clone
-$ git clone https://www.github.com/stainless-sdks/instantly2-typescript
-$ cd instantly2-typescript
+$ git clone https://www.github.com/Romamo/instantly2
+$ cd instantly2
 
 # With yarn
 $ yarn link
