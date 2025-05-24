@@ -240,11 +240,11 @@ The following tools are available in this MCP server.
 
 - `create_v2_email_verification` (`write`): If an email takes longer than 10 seconds to verify, the endpoint will return the status as `pending`. In that case, you may use the `/email-verification/:email` endpoint to check the status of the verification job.
 
-Alternatively, you can send a `webhook_url` to receive the results instead of polling the status endpoint.
+  Alternatively, you can send a `webhook_url` to receive the results instead of polling the status endpoint.
 
-Requires one of the following scopes: `email_verifications:create`
+  Requires one of the following scopes: `email_verifications:create`
 
-Requires one of the following scopes: `email_verifications:create`, `email_verifications:all`, `all:create`, `all:all`
+  Requires one of the following scopes: `email_verifications:create`, `email_verifications:all`, `all:create`, `all:all`
 
 - `check_status_v2_email_verification` (`read`): Requires one of the following scopes: `email_verifications:read`, `email_verifications:all`, `all:read`, `all:all`
 
@@ -256,7 +256,7 @@ Requires one of the following scopes: `email_verifications:create`, `email_verif
 - `delete_v2_emails` (`write`): Requires one of the following scopes: `emails:delete`, `emails:all`, `all:delete`, `all:all`
 - `reply_v2_emails` (`write`): Send a reply to an email. This endpoint can be used to send an email only as a reply to an existing email. In order to reply to an email, please specify the `reyply_to_uuid` field, and your email will be sent as a reply to that email. The `reyply_to_uuid` field represents the `id` field of an existing email, which is being returned to you in all the `/email` endpoints
 
-Requires one of the following scopes: `emails:create`, `emails:all`, `all:create`, `all:all`
+  Requires one of the following scopes: `emails:create`, `emails:all`, `all:create`, `all:all`
 
 ### Resource `v2.emails.threads`:
 
@@ -272,15 +272,15 @@ Requires one of the following scopes: `emails:create`, `emails:all`, `all:create
 - `list_v2_inbox_placement_analytics` (`read`): Requires one of the following scopes: `inbox_placement_analytics:read`, `inbox_placement_analytics:all`, `all:read`, `all:all`
 - `get_deliverability_insights_v2_inbox_placement_analytics` (`write`): Provides deliverability insights for a specific inbox placement test
 
-Requires one of the following scopes: `inbox_placement_analytics:read`, `inbox_placement_analytics:all`, `all:read`, `all:all`
+  Requires one of the following scopes: `inbox_placement_analytics:read`, `inbox_placement_analytics:all`, `all:read`, `all:all`
 
 - `get_stats_by_date_v2_inbox_placement_analytics` (`write`): Provides a time series representing the distribution of emails sent to inbox, spam, or category folders for scheduled inbox placement tests.
 
-Requires one of the following scopes: `inbox_placement_analytics:read`, `inbox_placement_analytics:all`, `all:read`, `all:all`
+  Requires one of the following scopes: `inbox_placement_analytics:read`, `inbox_placement_analytics:all`, `all:read`, `all:all`
 
 - `get_stats_by_test_id_v2_inbox_placement_analytics` (`write`): Provides aggregated inbox, spam and category counts for specified test IDs
 
-Requires one of the following scopes: `inbox_placement_analytics:read`, `inbox_placement_analytics:all`, `all:read`, `all:all`
+  Requires one of the following scopes: `inbox_placement_analytics:read`, `inbox_placement_analytics:all`, `all:read`, `all:all`
 
 ### Resource `v2.inbox_placement_reports`:
 
@@ -319,21 +319,21 @@ Requires one of the following scopes: `inbox_placement_analytics:read`, `inbox_p
 - `update_v2_leads` (`write`): Requires one of the following scopes: `leads:update`, `leads:all`, `all:update`, `all:all`
 - `list_v2_leads` (`write`): This endpoint is a POST endpoint, instead of GET - a deviation from the REST APIs standards we’re following because of the complex arguments it accepts, which would be too hard to express through query parameters
 
-Requires one of the following scopes: `leads:read`, `leads:all`, `all:read`, `all:all`
+  Requires one of the following scopes: `leads:read`, `leads:all`, `all:read`, `all:all`
 
 - `delete_v2_leads` (`write`): Requires one of the following scopes: `leads:delete`, `leads:all`, `all:delete`, `all:all`
 - `bulk_assign_v2_leads` (`write`): Bulk assign leads to organization users
 - `export_v2_leads` (`write`): Export leads to an external app. This endpoint will return a background job that will process the move. The job will be processed in the background and the leads will be moved to the destination campaign or list. You can use the `/background-jobs/:id` endpoint to check the job status.
 
-Requires one of the following scopes: `leads:update`, `leads:all`, `all:update`, `all:all`
+  Requires one of the following scopes: `leads:update`, `leads:all`, `all:update`, `all:all`
 
 - `merge_v2_leads` (`write`): Merge two leads
 
-Requires one of the following scopes: `leads:update`, `leads:all`, `all:update`, `all:all`
+  Requires one of the following scopes: `leads:update`, `leads:all`, `all:update`, `all:all`
 
 - `move_v2_leads` (`write`): Move leads to a different campaign or list. This endpoint will return a background job that will process the move. The job will be processed in the background and the leads will be moved to the destination campaign or list. You can use the `/background-jobs/:id` endpoint to check the job status.
 
-Requires one of the following scopes: `leads:update`, `leads:all`, `all:update`, `all:all`
+  Requires one of the following scopes: `leads:update`, `leads:all`, `all:update`, `all:all`
 
 - `update_interest_status_v2_leads` (`write`): Update the interest status of a lead
 
@@ -341,11 +341,11 @@ Requires one of the following scopes: `leads:update`, `leads:all`, `all:update`,
 
 - `move_leads_v2_subsequence` (`write`): Move a lead to a subsequence
 
-Requires one of the following scopes: `leads:update`, `leads:all`, `all:update`, `all:all`
+  Requires one of the following scopes: `leads:update`, `leads:all`, `all:update`, `all:all`
 
 - `remove_leads_v2_subsequence` (`write`): Remove a lead from a subsequence
 
-Requires one of the following scopes: `leads:update`, `leads:all`, `all:update`, `all:all`
+  Requires one of the following scopes: `leads:update`, `leads:all`, `all:update`, `all:all`
 
 ### Resource `v2.subsequences`:
 
@@ -356,21 +356,21 @@ Requires one of the following scopes: `leads:update`, `leads:all`, `all:update`,
 - `delete_v2_subsequences` (`write`): Requires one of the following scopes: `subsequences:delete`, `subsequences:all`, `all:delete`, `all:all`
 - `duplicate_v2_subsequences` (`write`): Duplicate a subsequence with the same trigger conditions
 
-Requires one of the following scopes: `subsequences:create`, `subsequences:all`, `all:create`, `all:all`
+  Requires one of the following scopes: `subsequences:create`, `subsequences:all`, `all:create`, `all:all`
 
 - `pause_v2_subsequences` (`write`): Pause a subsequence
 
-Requires one of the following scopes: `subsequences:update`, `subsequences:all`, `all:update`, `all:all`
+  Requires one of the following scopes: `subsequences:update`, `subsequences:all`, `all:update`, `all:all`
 
 - `resume_v2_subsequences` (`write`): Resume a paused subsequence
 
-Requires one of the following scopes: `subsequences:update`, `subsequences:all`, `all:update`, `all:all`
+  Requires one of the following scopes: `subsequences:update`, `subsequences:all`, `all:update`, `all:all`
 
 ### Resource `v2.workspace_group_members`:
 
 - `create_v2_workspace_group_members` (`write`): This endpoint allows you to send an invitation for a sub workspace to join the admin workspace. The sub workspace will be added as a sub workspace of the admin workspace only if the sub workspace owner accepts the invitation.
 
-Requires one of the following scopes: `workspace_group_members:create`, `workspace_group_members:all`, `all:create`, `all:all`
+  Requires one of the following scopes: `workspace_group_members:create`, `workspace_group_members:all`, `all:create`, `all:all`
 
 - `retrieve_v2_workspace_group_members` (`read`): Requires one of the following scopes: `workspace_group_members:read`, `workspace_group_members:all`, `all:read`, `all:all`
 - `list_v2_workspace_group_members` (`read`): Requires one of the following scopes: `workspace_group_members:read`, `workspace_group_members:all`, `all:read`, `all:all`
@@ -389,8 +389,8 @@ Requires one of the following scopes: `workspace_group_members:create`, `workspa
 
 - `retrieve_workspaces_v2_current` (`read`): Get your current workspace details. Note that this endpoint doesn't require any parameters. It will return the workspace based on the API key sent in the headers.
 
-Requires one of the following scopes: `workspaces:read`, `workspaces:all`, `all:read`, `all:all`
+  Requires one of the following scopes: `workspaces:read`, `workspaces:all`, `all:read`, `all:all`
 
 - `update_workspaces_v2_current` (`write`): Update your current workspace details. Note that this endpoint doesn't require any parameters. It will update the workspace based on the API key sent in the headers.
 
-Requires one of the following scopes: `workspaces:update`, `workspaces:all`, `all:update`, `all:all`
+  Requires one of the following scopes: `workspaces:update`, `workspaces:all`, `all:update`, `all:all`
