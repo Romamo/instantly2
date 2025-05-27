@@ -1,0 +1,18 @@
+{
+  "name": "instantly-mcp-worker",
+  "version": "1.0.0",
+  "description": "Cloudflare Worker for Instantly MCP Server",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "wrangler dev"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.1.0",
+    "instantly2": "file:../../dist/instantly2"
+  },
+  "devDependencies": {
+    "wrangler": "^3.0.0",
+    "typescript": "^5.0.0"
+  }
+}

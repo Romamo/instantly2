@@ -1,0 +1,9 @@
+[vars]
+# Replace with your actual API key
+INSTANTLY2_API_KEY = ""
+
+[build]
+command = "yarn build"
+
+[build.upload]
+format = "service-worker"
