@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   resource: 'v2.emails.threads',
   operation: 'write',
   tags: [],
+  httpMethod: 'post',
+  httpPath: '/api/v2/emails/threads/{thread_id}/mark-as-read',
+  operationId: 'markThreadAsRead',
 };
 
 export const tool: Tool = {

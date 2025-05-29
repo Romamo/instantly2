@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   resource: 'v2.block_lists_entries',
   operation: 'read',
   tags: [],
+  httpMethod: 'get',
+  httpPath: '/api/v2/block-lists-entries',
+  operationId: 'listBlockListEntry',
 };
 
 export const tool: Tool = {

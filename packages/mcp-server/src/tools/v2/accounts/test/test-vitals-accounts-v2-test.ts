@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   resource: 'v2.accounts.test',
   operation: 'write',
   tags: [],
+  httpMethod: 'post',
+  httpPath: '/api/v2/accounts/test/vitals',
+  operationId: 'testAccountVitals',
 };
 
 export const tool: Tool = {

@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   resource: 'v2.accounts.ctd',
   operation: 'read',
   tags: [],
+  httpMethod: 'get',
+  httpPath: '/api/v2/accounts/ctd/status',
+  operationId: 'getCtdStatus',
 };
 
 export const tool: Tool = {
