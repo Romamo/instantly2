@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   resource: 'v2.subsequences',
   operation: 'read',
   tags: [],
+  httpMethod: 'get',
+  httpPath: '/api/v2/subsequences/{id}',
+  operationId: 'getCampaignSubsequence',
 };
 
 export const tool: Tool = {

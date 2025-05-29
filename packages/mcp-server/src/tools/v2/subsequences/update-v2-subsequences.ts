@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   resource: 'v2.subsequences',
   operation: 'write',
   tags: [],
+  httpMethod: 'patch',
+  httpPath: '/api/v2/subsequences/{id}',
+  operationId: 'patchCampaignSubsequence',
 };
 
 export const tool: Tool = {

@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   resource: 'v2',
   operation: 'read',
   tags: [],
+  httpMethod: 'get',
+  httpPath: '/api/v2/background-jobs',
+  operationId: 'listBackgroundJob',
 };
 
 export const tool: Tool = {

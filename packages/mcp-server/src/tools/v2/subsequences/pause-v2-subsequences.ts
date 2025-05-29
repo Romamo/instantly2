@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   resource: 'v2.subsequences',
   operation: 'write',
   tags: [],
+  httpMethod: 'post',
+  httpPath: '/api/v2/subsequences/{id}/pause',
+  operationId: 'pauseSubsequence',
 };
 
 export const tool: Tool = {

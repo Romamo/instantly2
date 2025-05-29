@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   resource: 'v2.accounts',
   operation: 'read',
   tags: [],
+  httpMethod: 'get',
+  httpPath: '/api/v2/accounts',
+  operationId: 'listAccount',
 };
 
 export const tool: Tool = {

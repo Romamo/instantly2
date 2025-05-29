@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   resource: 'v2.accounts',
   operation: 'write',
   tags: [],
+  httpMethod: 'post',
+  httpPath: '/api/v2/accounts/warmup-analytics',
+  operationId: 'getWarmupAnalytics',
 };
 
 export const tool: Tool = {
