@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   resource: 'v2.workspaces.current',
   operation: 'read',
   tags: [],
+  httpMethod: 'get',
+  httpPath: '/api/v2/workspaces/current',
+  operationId: 'getWorkspace',
 };
 
 export const tool: Tool = {

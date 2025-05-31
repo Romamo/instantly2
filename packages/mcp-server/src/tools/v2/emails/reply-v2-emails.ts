@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   resource: 'v2.emails',
   operation: 'write',
   tags: [],
+  httpMethod: 'post',
+  httpPath: '/api/v2/emails/reply',
+  operationId: 'replyToEmail',
 };
 
 export const tool: Tool = {

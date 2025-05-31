@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   resource: 'v2.accounts',
   operation: 'write',
   tags: [],
+  httpMethod: 'post',
+  httpPath: '/api/v2/accounts/{email}/resume',
+  operationId: 'resumeAccount',
 };
 
 export const tool: Tool = {

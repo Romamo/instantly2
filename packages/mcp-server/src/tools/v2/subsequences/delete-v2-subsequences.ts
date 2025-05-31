@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   resource: 'v2.subsequences',
   operation: 'write',
   tags: [],
+  httpMethod: 'delete',
+  httpPath: '/api/v2/subsequences/{id}',
+  operationId: 'deleteCampaignSubsequence',
 };
 
 export const tool: Tool = {

@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   resource: 'v2.inbox_placement_tests',
   operation: 'read',
   tags: [],
+  httpMethod: 'get',
+  httpPath: '/api/v2/inbox-placement-tests/{id}',
+  operationId: 'getInboxPlacementTest',
 };
 
 export const tool: Tool = {

@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   resource: 'v2.emails.unread',
   operation: 'read',
   tags: [],
+  httpMethod: 'get',
+  httpPath: '/api/v2/emails/unread/count',
+  operationId: 'countUnreadEmails',
 };
 
 export const tool: Tool = {

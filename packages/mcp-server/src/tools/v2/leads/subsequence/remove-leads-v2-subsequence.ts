@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   resource: 'v2.leads.subsequence',
   operation: 'write',
   tags: [],
+  httpMethod: 'post',
+  httpPath: '/api/v2/leads/subsequence/remove',
+  operationId: 'removeLeadFromSubsequence',
 };
 
 export const tool: Tool = {

@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   resource: 'v2.inbox_placement_reports',
   operation: 'read',
   tags: [],
+  httpMethod: 'get',
+  httpPath: '/api/v2/inbox-placement-reports/{id}',
+  operationId: 'getInboxPlacementBlacklist&SpamAssassinReport',
 };
 
 export const tool: Tool = {

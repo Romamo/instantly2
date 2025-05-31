@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   resource: 'v2.leads',
   operation: 'write',
   tags: [],
+  httpMethod: 'post',
+  httpPath: '/api/v2/leads/update-interest-status',
+  operationId: 'updateLeadInterestStatus',
 };
 
 export const tool: Tool = {

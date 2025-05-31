@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   resource: 'v2.custom_tags',
   operation: 'read',
   tags: [],
+  httpMethod: 'get',
+  httpPath: '/api/v2/custom-tags',
+  operationId: 'listCustomTag',
 };
 
 export const tool: Tool = {

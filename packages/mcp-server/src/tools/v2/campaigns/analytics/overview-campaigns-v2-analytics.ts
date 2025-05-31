@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   resource: 'v2.campaigns.analytics',
   operation: 'read',
   tags: [],
+  httpMethod: 'get',
+  httpPath: '/api/v2/campaigns/analytics/overview',
+  operationId: 'getCampaignAnalyticsOverview',
 };
 
 export const tool: Tool = {

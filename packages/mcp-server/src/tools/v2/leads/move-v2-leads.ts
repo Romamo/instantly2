@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   resource: 'v2.leads',
   operation: 'write',
   tags: [],
+  httpMethod: 'post',
+  httpPath: '/api/v2/leads/move',
+  operationId: 'moveLeads',
 };
 
 export const tool: Tool = {

@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   resource: 'v2.email_verification',
   operation: 'read',
   tags: [],
+  httpMethod: 'get',
+  httpPath: '/api/v2/email-verification/{email}',
+  operationId: 'checkVerificationStatus',
 };
 
 export const tool: Tool = {

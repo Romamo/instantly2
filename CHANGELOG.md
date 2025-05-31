@@ -1,5 +1,27 @@
 # Changelog
 
+## 0.1.0-alpha.1 (2025-05-31)
+
+Full Changelog: [v0.0.1-alpha.1...v0.1.0-alpha.1](https://github.com/Romamo/instantly2/compare/v0.0.1-alpha.1...v0.1.0-alpha.1)
+
+### Features
+
+* **mcp:** include http information in tools ([93daab3](https://github.com/Romamo/instantly2/commit/93daab3098bfb01ae8ac10a156f3166dfb8124e5))
+
+
+### Bug Fixes
+
+* compat with more runtimes ([232041d](https://github.com/Romamo/instantly2/commit/232041ddc81c01850ab4d768245b018d49f2f1c8))
+* **mcp:** include description in dynamic tool search ([522fa36](https://github.com/Romamo/instantly2/commit/522fa362d854b0c09e6015204422b43a674fb758))
+
+
+### Chores
+
+* **deps:** bump eslint-plugin-prettier ([1d1cadb](https://github.com/Romamo/instantly2/commit/1d1cadb0db1cc8e4e00cf545fc0a0cfb636e4af0))
+* improve publish-npm script --latest tag logic ([c204c86](https://github.com/Romamo/instantly2/commit/c204c8633a471045eb34a3cd40fb0953a699e891))
+* **internal:** update jest config ([b4df1a5](https://github.com/Romamo/instantly2/commit/b4df1a59408aee7137ca0ba1a1f392f5eaa46df9))
+* **mcp:** remove duplicate assignment ([d7c3db9](https://github.com/Romamo/instantly2/commit/d7c3db9393b72ad192dc788e0684f44795cab2d3))
+
 ## 0.0.1-alpha.1 (2025-05-24)
 
 Full Changelog: [v0.0.1-alpha.0...v0.0.1-alpha.1](https://github.com/Romamo/instantly2/compare/v0.0.1-alpha.0...v0.0.1-alpha.1)

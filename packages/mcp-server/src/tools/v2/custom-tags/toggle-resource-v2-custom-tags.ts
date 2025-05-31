@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   resource: 'v2.custom_tags',
   operation: 'write',
   tags: [],
+  httpMethod: 'post',
+  httpPath: '/api/v2/custom-tags/toggle-resource',
+  operationId: 'toggleTagResource',
 };
 
 export const tool: Tool = {
