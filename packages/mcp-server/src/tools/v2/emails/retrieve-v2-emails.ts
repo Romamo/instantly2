@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   resource: 'v2.emails',
   operation: 'read',
   tags: [],
+  httpMethod: 'get',
+  httpPath: '/api/v2/emails/{id}',
+  operationId: 'getEmail',
 };
 
 export const tool: Tool = {

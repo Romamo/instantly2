@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   resource: 'v2.inbox_placement_analytics',
   operation: 'write',
   tags: [],
+  httpMethod: 'post',
+  httpPath: '/api/v2/inbox-placement-analytics/deliverability-insights',
+  operationId: 'getInboxPlacementAnalyticsDeliverabilityInsights',
 };
 
 export const tool: Tool = {

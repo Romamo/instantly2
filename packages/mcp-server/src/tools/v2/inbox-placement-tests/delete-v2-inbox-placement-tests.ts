@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   resource: 'v2.inbox_placement_tests',
   operation: 'write',
   tags: [],
+  httpMethod: 'delete',
+  httpPath: '/api/v2/inbox-placement-tests/{id}',
+  operationId: 'deleteInboxPlacementTest',
 };
 
 export const tool: Tool = {

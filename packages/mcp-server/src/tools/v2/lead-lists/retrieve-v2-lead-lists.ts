@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   resource: 'v2.lead_lists',
   operation: 'read',
   tags: [],
+  httpMethod: 'get',
+  httpPath: '/api/v2/lead-lists/{id}',
+  operationId: 'getLeadList',
 };
 
 export const tool: Tool = {

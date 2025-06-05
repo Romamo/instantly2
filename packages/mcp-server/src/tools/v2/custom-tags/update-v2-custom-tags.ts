@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   resource: 'v2.custom_tags',
   operation: 'write',
   tags: [],
+  httpMethod: 'patch',
+  httpPath: '/api/v2/custom-tags/{id}',
+  operationId: 'patchCustomTag',
 };
 
 export const tool: Tool = {

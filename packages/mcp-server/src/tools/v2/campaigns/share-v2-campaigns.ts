@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   resource: 'v2.campaigns',
   operation: 'write',
   tags: [],
+  httpMethod: 'post',
+  httpPath: '/api/v2/campaigns/{id}/share',
+  operationId: 'shareCampaign',
 };
 
 export const tool: Tool = {

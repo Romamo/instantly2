@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   resource: 'v2.lead_labels',
   operation: 'write',
   tags: [],
+  httpMethod: 'patch',
+  httpPath: '/api/v2/lead-labels/{id}',
+  operationId: 'patchLeadLabel',
 };
 
 export const tool: Tool = {
