@@ -1,7 +1,8 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-import Instantly2 from 'instantly2';
-import { Tool } from '@modelcontextprotocol/sdk/types.js';
+import { Metadata, Endpoint, HandlerFunction } from './types';
+
+export { Metadata, Endpoint, HandlerFunction };
 
 import create_api_key_v2 from './v2/create-api-key-v2';
 import get_account_campaign_mappings_v2 from './v2/get-account-campaign-mappings-v2';
@@ -108,24 +109,6 @@ import list_v2_workspace_members from './v2/workspace-members/list-v2-workspace-
 import delete_v2_workspace_members from './v2/workspace-members/delete-v2-workspace-members';
 import retrieve_workspaces_v2_current from './v2/workspaces/current/retrieve-workspaces-v2-current';
 import update_workspaces_v2_current from './v2/workspaces/current/update-workspaces-v2-current';
-
-export type HandlerFunction = (client: Instantly2, args: Record<string, unknown> | undefined) => Promise<any>;
-
-export type Metadata = {
-  resource: string;
-  operation: 'read' | 'write';
-  tags: string[];
-
-  httpMethod?: string;
-  httpPath?: string;
-  operationId?: string;
-};
-
-export type Endpoint = {
-  metadata: Metadata;
-  tool: Tool;
-  handler: HandlerFunction;
-};
 
 export const endpoints: Endpoint[] = [];
 

@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.1.0-alpha.2 (2025-06-06)
+
+Full Changelog: [v0.1.0-alpha.1...v0.1.0-alpha.2](https://github.com/Romamo/instantly2/compare/v0.1.0-alpha.1...v0.1.0-alpha.2)
+
+### Features
+
+* **mcp:** implement support for binary responses ([217903f](https://github.com/Romamo/instantly2/commit/217903f3e1f85bf0410be198e0761e144627618b))
+
 ## 0.1.0-alpha.1 (2025-06-04)
 
 Full Changelog: [v0.0.1-alpha.1...v0.1.0-alpha.1](https://github.com/Romamo/instantly2/compare/v0.0.1-alpha.1...v0.1.0-alpha.1)
