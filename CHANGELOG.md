@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.1.0-alpha.3 (2025-06-07)
+
+Full Changelog: [v0.1.0-alpha.2...v0.1.0-alpha.3](https://github.com/Romamo/instantly2/compare/v0.1.0-alpha.2...v0.1.0-alpha.3)
+
+### Chores
+
+* avoid type error in certain environments ([ada1f24](https://github.com/Romamo/instantly2/commit/ada1f24c036528d32e4641d9cdbc6530e357fdb4))
+
 ## 0.1.0-alpha.2 (2025-06-06)
 
 Full Changelog: [v0.1.0-alpha.1...v0.1.0-alpha.2](https://github.com/Romamo/instantly2/compare/v0.1.0-alpha.1...v0.1.0-alpha.2)
