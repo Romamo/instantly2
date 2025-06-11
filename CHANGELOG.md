@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.1.0-alpha.3 (2025-06-11)
+
+Full Changelog: [v0.1.0-alpha.2...v0.1.0-alpha.3](https://github.com/Romamo/instantly2/compare/v0.1.0-alpha.2...v0.1.0-alpha.3)
+
+### Chores
+
+* avoid type error in certain environments ([ada1f24](https://github.com/Romamo/instantly2/commit/ada1f24c036528d32e4641d9cdbc6530e357fdb4))
+* **mcp:** provides high-level initMcpServer function and exports known clients ([1a5cba9](https://github.com/Romamo/instantly2/commit/1a5cba99fa82e7e75c9123f312fae93666d6cbe2))
+
 ## 0.1.0-alpha.2 (2025-06-06)
 
 Full Changelog: [v0.1.0-alpha.1...v0.1.0-alpha.2](https://github.com/Romamo/instantly2/compare/v0.1.0-alpha.1...v0.1.0-alpha.2)
