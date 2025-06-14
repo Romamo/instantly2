@@ -2,7 +2,7 @@
 
 import type { Instantly2 } from '../client';
 
-export class APIResource {
+export abstract class APIResource {
   protected _client: Instantly2;
 
   constructor(client: Instantly2) {
