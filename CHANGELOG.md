@@ -1,5 +1,23 @@
 # Changelog
 
+## 0.1.0-alpha.4 (2025-06-14)
+
+Full Changelog: [v0.1.0-alpha.3...v0.1.0-alpha.4](https://github.com/Romamo/instantly2/compare/v0.1.0-alpha.3...v0.1.0-alpha.4)
+
+### Features
+
+* **mcp:** set X-Stainless-MCP header ([0c27b72](https://github.com/Romamo/instantly2/commit/0c27b72b0074f1562cf26e51ad1b67683314f8c4))
+
+
+### Bug Fixes
+
+* publish script — handle NPM errors correctly ([4ecb0a8](https://github.com/Romamo/instantly2/commit/4ecb0a8ec3e72c2be446e0567d27deaf402e1f07))
+
+
+### Chores
+
+* **internal:** add pure annotations, make base APIResource abstract ([26d5c9c](https://github.com/Romamo/instantly2/commit/26d5c9c7a6e3836696f3c9e5bbba3e728a4510e3))
+
 ## 0.1.0-alpha.3 (2025-06-11)
 
 Full Changelog: [v0.1.0-alpha.2...v0.1.0-alpha.3](https://github.com/Romamo/instantly2/compare/v0.1.0-alpha.2...v0.1.0-alpha.3)
