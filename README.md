@@ -1,6 +1,6 @@
 # Instantly2 TypeScript API Library
 
-[![NPM version](https://img.shields.io/npm/v/instantly2.svg)](https://npmjs.org/package/instantly2) ![npm bundle size](https://img.shields.io/bundlephobia/minzip/instantly2)
+[![NPM version](<https://img.shields.io/npm/v/instantly2.svg?label=npm%20(stable)>)](https://npmjs.org/package/instantly2) ![npm bundle size](https://img.shields.io/bundlephobia/minzip/instantly2)
 
 This library provides convenient access to the Instantly2 REST API from server-side TypeScript or JavaScript.
 
