@@ -1,5 +1,29 @@
 # Changelog
 
+## 0.1.0-alpha.4 (2025-06-21)
+
+Full Changelog: [v0.1.0-alpha.3...v0.1.0-alpha.4](https://github.com/Romamo/instantly2/compare/v0.1.0-alpha.3...v0.1.0-alpha.4)
+
+### Features
+
+* **client:** add support for endpoint-specific base URLs ([d9961f1](https://github.com/Romamo/instantly2/commit/d9961f1c59e9cab7132613d81c547c0c35540c16))
+* **mcp:** set X-Stainless-MCP header ([0c27b72](https://github.com/Romamo/instantly2/commit/0c27b72b0074f1562cf26e51ad1b67683314f8c4))
+
+
+### Bug Fixes
+
+* **client:** explicitly copy fetch in withOptions ([d034495](https://github.com/Romamo/instantly2/commit/d034495167d11e5a700162282dd96c77722f0e0e))
+* publish script — handle NPM errors correctly ([4ecb0a8](https://github.com/Romamo/instantly2/commit/4ecb0a8ec3e72c2be446e0567d27deaf402e1f07))
+
+
+### Chores
+
+* **ci:** enable for pull requests ([4a51ac6](https://github.com/Romamo/instantly2/commit/4a51ac6c4d6d019c9125286f74930f1b45339b1d))
+* **client:** refactor imports ([259847c](https://github.com/Romamo/instantly2/commit/259847c63c627efda20ded2a0ec94c0a61182efe))
+* **internal:** add pure annotations, make base APIResource abstract ([26d5c9c](https://github.com/Romamo/instantly2/commit/26d5c9c7a6e3836696f3c9e5bbba3e728a4510e3))
+* **readme:** update badges ([366f82c](https://github.com/Romamo/instantly2/commit/366f82c5e608c4ddcc4f2542208df54b23ae6803))
+* **readme:** use better example snippet for undocumented params ([858250a](https://github.com/Romamo/instantly2/commit/858250a07ae19ba0c4ae06e6921f26d2bc97e0f2))
+
 ## 0.1.0-alpha.3 (2025-06-11)
 
 Full Changelog: [v0.1.0-alpha.2...v0.1.0-alpha.3](https://github.com/Romamo/instantly2/compare/v0.1.0-alpha.2...v0.1.0-alpha.3)
