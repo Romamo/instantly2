@@ -314,7 +314,7 @@ export namespace PlacementTest {
      * Days of the week when the test will run, where keys are integers (0-6, 0 =
      * Sunday) and values are booleans indicating active days.
      */
-    days?: Record<string, boolean>;
+    days?: { [key: string]: boolean };
 
     /**
      * Timezone in which the schedule is set, in IANA timezone format.
@@ -628,7 +628,7 @@ export namespace InboxPlacementTestRetrieveResponse {
     /**
      * The tags associated with the inbox placement test
      */
-    tags?: Record<string, Metadata.Tags>;
+    tags?: { [key: string]: Metadata.Tags };
   }
 
   export namespace Metadata {
@@ -679,7 +679,7 @@ export namespace InboxPlacementTestRetrieveResponse {
      * Days of the week when the test will run, where keys are integers (0-6, 0 =
      * Sunday) and values are booleans indicating active days.
      */
-    days?: Record<string, boolean>;
+    days?: { [key: string]: boolean };
 
     /**
      * Timezone in which the schedule is set, in IANA timezone format.
@@ -1016,7 +1016,7 @@ export namespace InboxPlacementTestCreateParams {
      * Days of the week when the test will run, where keys are integers (0-6, 0 =
      * Sunday) and values are booleans indicating active days.
      */
-    days?: Record<string, boolean>;
+    days?: { [key: string]: boolean };
 
     /**
      * Timezone in which the schedule is set, in IANA timezone format.
@@ -1233,7 +1233,7 @@ export namespace InboxPlacementTestUpdateParams {
      * Days of the week when the test will run, where keys are integers (0-6, 0 =
      * Sunday) and values are booleans indicating active days.
      */
-    days?: Record<string, boolean>;
+    days?: { [key: string]: boolean };
 
     /**
      * Timezone in which the schedule is set, in IANA timezone format.
