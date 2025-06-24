@@ -390,12 +390,11 @@ export interface AccountListResponse {
 }
 
 export interface AccountWarmupAnalyticsResponse {
-  aggregate_data?: Record<string, AccountWarmupAnalyticsResponse.AggregateData>;
+  aggregate_data?: { [key: string]: AccountWarmupAnalyticsResponse.AggregateData };
 
-  email_date_data?: Record<
-    string,
-    Record<string, AccountWarmupAnalyticsResponse.unnamed_schema_with_map_parent_0>
-  >;
+  email_date_data?: {
+    [key: string]: { [key: string]: AccountWarmupAnalyticsResponse.unnamed_schema_with_map_parent_0 };
+  };
 }
 
 export namespace AccountWarmupAnalyticsResponse {
