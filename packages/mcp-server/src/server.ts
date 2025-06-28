@@ -26,7 +26,7 @@ export { endpoints } from './tools';
 export const server = new McpServer(
   {
     name: 'instantly2_api',
-    version: '0.1.0-alpha.3',
+    version: '0.1.0-alpha.4',
   },
   {
     capabilities: {
@@ -65,7 +65,7 @@ export function init(params: {
 
   const endpointMap = Object.fromEntries(providedEndpoints.map((endpoint) => [endpoint.tool.name, endpoint]));
 
-  const client = params.client || new Instantly2({});
+  const client = params.client || new Instantly2({ defaultHeaders: { 'X-Stainless-MCP': 'true' } });
 
   server.setRequestHandler(ListToolsRequestSchema, async () => {
     return {
