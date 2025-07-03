@@ -527,7 +527,7 @@ export interface LeadCreateParams {
    * campaign to have the same custom variables. The custom variables will be added
    * to the lead payload field
    */
-  custom_variables?: Record<string, string | number | boolean | null>;
+  custom_variables?: { [key: string]: string | number | boolean | null };
 
   /**
    * Email address of the lead
@@ -603,7 +603,7 @@ export interface LeadUpdateParams {
    * campaign to have the same custom variables. The custom variables will be added
    * to the lead payload field
    */
-  custom_variables?: Record<string, string | number | boolean | null>;
+  custom_variables?: { [key: string]: string | number | boolean | null };
 
   /**
    * First name of the lead
