@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 export const tool: Tool = {
   name: 'duplicate_v2_subsequences',
   description:
-    'Duplicate a subsequence with the same trigger conditions\n\n\nRequires one of the following scopes: `subsequences:create`, `subsequences:all`, `all:create`, `all:all`',
+    "When using this tool, always use the `jq_filter` parameter to reduce the response size and improve performance.\n\nOnly omit if you're sure you don't need the data.\n\nDuplicate a subsequence with the same trigger conditions\n\n\nRequires one of the following scopes: `subsequences:create`, `subsequences:all`, `all:create`, `all:all`",
   inputSchema: {
     type: 'object',
     properties: {

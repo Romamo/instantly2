@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 export const tool: Tool = {
   name: 'list_v2_leads',
   description:
-    'This endpoint is a POST endpoint, instead of GET - a deviation from the REST APIs standards we’re following because of the complex arguments it accepts, which would be too hard to express through query parameters\n\n\nRequires one of the following scopes: `leads:read`, `leads:all`, `all:read`, `all:all`',
+    "When using this tool, always use the `jq_filter` parameter to reduce the response size and improve performance.\n\nOnly omit if you're sure you don't need the data.\n\nThis endpoint is a POST endpoint, instead of GET - a deviation from the REST APIs standards we’re following because of the complex arguments it accepts, which would be too hard to express through query parameters\n\n\nRequires one of the following scopes: `leads:read`, `leads:all`, `all:read`, `all:all`",
   inputSchema: {
     type: 'object',
     properties: {
