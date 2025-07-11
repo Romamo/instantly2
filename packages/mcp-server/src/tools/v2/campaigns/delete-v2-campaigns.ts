@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 export const tool: Tool = {
   name: 'delete_v2_campaigns',
   description:
-    'Requires one of the following scopes: `campaigns:delete`, `campaigns:all`, `all:delete`, `all:all`',
+    "When using this tool, always use the `jq_filter` parameter to reduce the response size and improve performance.\n\nOnly omit if you're sure you don't need the data.\n\nRequires one of the following scopes: `campaigns:delete`, `campaigns:all`, `all:delete`, `all:all`",
   inputSchema: {
     type: 'object',
     properties: {
