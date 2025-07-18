@@ -69,7 +69,6 @@ export const tool: Tool = {
                   type: 'string',
                 },
               },
-              required: [],
             },
             when: {
               type: 'object',
@@ -286,10 +285,8 @@ export const tool: Tool = {
                 description: 'The time of day when the test will start (24-hour format).',
               },
             },
-            required: [],
           },
         },
-        required: [],
       },
       sending_method: {
         type: 'string',
@@ -322,6 +319,7 @@ export const tool: Tool = {
         description: 'Timestamp when the inbox placement test will run next',
       },
     },
+    required: ['name', 'type'],
   },
 };
 

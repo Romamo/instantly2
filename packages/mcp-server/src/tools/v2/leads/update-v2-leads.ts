@@ -68,6 +68,7 @@ export const tool: Tool = {
         description: 'Website of the lead',
       },
     },
+    required: ['id'],
   },
 };
 

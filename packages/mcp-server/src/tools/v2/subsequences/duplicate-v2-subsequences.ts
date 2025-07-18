@@ -31,6 +31,7 @@ export const tool: Tool = {
         type: 'string',
       },
     },
+    required: ['id', 'name', 'parent_campaign'],
   },
 };
 

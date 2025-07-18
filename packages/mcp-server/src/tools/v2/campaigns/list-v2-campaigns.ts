@@ -40,6 +40,7 @@ export const tool: Tool = {
           'Filter campaigns by tag ids. Returns campaigns that have any of the specified tags assigned. You can specify multiple tag ids by separating them with a comma.',
       },
     },
+    required: [],
   },
 };
 

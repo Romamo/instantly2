@@ -35,7 +35,6 @@ export const tool: Tool = {
             type: 'string',
           },
         },
-        required: [],
       },
       name: {
         type: 'string',
@@ -129,7 +128,6 @@ export const tool: Tool = {
                       type: 'boolean',
                     },
                   },
-                  required: [],
                 },
                 name: {
                   type: 'string',
@@ -269,6 +267,7 @@ export const tool: Tool = {
         required: ['schedules'],
       },
     },
+    required: ['conditions', 'name', 'parent_campaign', 'sequences', 'subsequence_schedule'],
   },
 };
 

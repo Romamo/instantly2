@@ -55,7 +55,6 @@ export const tool: Tool = {
                       type: 'boolean',
                     },
                   },
-                  required: [],
                 },
                 name: {
                   type: 'string',
@@ -356,6 +355,7 @@ export const tool: Tool = {
         description: 'Whether the campaign is text only',
       },
     },
+    required: ['campaign_schedule', 'name'],
   },
 };
 

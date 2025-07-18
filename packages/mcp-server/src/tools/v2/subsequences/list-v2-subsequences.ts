@@ -37,6 +37,7 @@ export const tool: Tool = {
           'The ID of the last item in the previous page - used for pagination. You can use the value of the `next_starting_after` field from the previous response.',
       },
     },
+    required: ['parent_campaign'],
   },
 };
 

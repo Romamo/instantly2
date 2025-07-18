@@ -29,6 +29,7 @@ export const tool: Tool = {
         description: 'Whether to include additional metadata about the inbox placement test',
       },
     },
+    required: ['id'],
   },
 };
 

@@ -44,6 +44,7 @@ export const tool: Tool = {
         enum: [1, 2, 3],
       },
     },
+    required: [],
   },
 };
 
