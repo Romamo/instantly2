@@ -38,7 +38,6 @@ export const tool: Tool = {
             type: 'string',
           },
         },
-        required: [],
       },
       name: {
         type: 'string',
@@ -95,6 +94,7 @@ export const tool: Tool = {
         },
       },
     },
+    required: ['id'],
   },
 };
 

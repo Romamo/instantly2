@@ -117,7 +117,6 @@ export const tool: Tool = {
                       type: 'number',
                     },
                   },
-                  required: [],
                 },
                 'occurrence-count': {
                   type: 'object',
@@ -130,13 +129,11 @@ export const tool: Tool = {
                       type: 'number',
                     },
                   },
-                  required: [],
                 },
                 'occurrence-days': {
                   type: 'number',
                 },
               },
-              required: [],
             },
           },
           required: ['actionType', 'values'],
@@ -156,6 +153,7 @@ export const tool: Tool = {
           'The ID of the last item in the previous page - used for pagination. You can use the value of the `next_starting_after` field from the previous response.',
       },
     },
+    required: [],
   },
 };
 

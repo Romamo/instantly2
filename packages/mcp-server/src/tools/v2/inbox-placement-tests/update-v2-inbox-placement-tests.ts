@@ -63,7 +63,6 @@ export const tool: Tool = {
                   type: 'string',
                 },
               },
-              required: [],
             },
             when: {
               type: 'object',
@@ -219,10 +218,8 @@ export const tool: Tool = {
                 description: 'The time of day when the test will start (24-hour format).',
               },
             },
-            required: [],
           },
         },
-        required: [],
       },
       status: {
         type: 'string',
@@ -230,6 +227,7 @@ export const tool: Tool = {
         enum: [1, 2, 3],
       },
     },
+    required: ['id'],
   },
 };
 
