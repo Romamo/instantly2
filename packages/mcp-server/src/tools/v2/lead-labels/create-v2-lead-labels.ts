@@ -48,6 +48,7 @@ export const tool: Tool = {
     },
     required: ['interest_status_label', 'label'],
   },
+  annotations: {},
 };
 
 export const handler = async (client: Instantly2, args: Record<string, unknown> | undefined) => {

@@ -166,6 +166,7 @@ export const tool: Tool = {
       'smtp_username',
     ],
   },
+  annotations: {},
 };
 
 export const handler = async (client: Instantly2, args: Record<string, unknown> | undefined) => {

@@ -269,6 +269,7 @@ export const tool: Tool = {
     },
     required: ['conditions', 'name', 'parent_campaign', 'sequences', 'subsequence_schedule'],
   },
+  annotations: {},
 };
 
 export const handler = async (client: Instantly2, args: Record<string, unknown> | undefined) => {

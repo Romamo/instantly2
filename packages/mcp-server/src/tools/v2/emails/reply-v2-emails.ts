@@ -75,6 +75,7 @@ export const tool: Tool = {
     },
     required: ['body', 'eaccount', 'reply_to_uuid', 'subject'],
   },
+  annotations: {},
 };
 
 export const handler = async (client: Instantly2, args: Record<string, unknown> | undefined) => {

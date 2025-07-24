@@ -51,6 +51,7 @@ export const tool: Tool = {
     },
     required: ['interest_value', 'lead_email'],
   },
+  annotations: {},
 };
 
 export const handler = async (client: Instantly2, args: Record<string, unknown> | undefined) => {
