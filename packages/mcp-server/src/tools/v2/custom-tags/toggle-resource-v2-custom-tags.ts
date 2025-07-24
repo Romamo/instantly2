@@ -82,6 +82,7 @@ export const tool: Tool = {
     },
     required: ['assign', 'resource_ids', 'resource_type', 'tag_ids'],
   },
+  annotations: {},
 };
 
 export const handler = async (client: Instantly2, args: Record<string, unknown> | undefined) => {

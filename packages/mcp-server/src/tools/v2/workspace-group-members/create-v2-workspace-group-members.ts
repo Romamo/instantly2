@@ -35,6 +35,7 @@ export const tool: Tool = {
     },
     required: ['sub_workspace_id'],
   },
+  annotations: {},
 };
 
 export const handler = async (client: Instantly2, args: Record<string, unknown> | undefined) => {

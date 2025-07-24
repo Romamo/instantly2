@@ -46,6 +46,9 @@ export const tool: Tool = {
     },
     required: [],
   },
+  annotations: {
+    readOnlyHint: true,
+  },
 };
 
 export const handler = async (client: Instantly2, args: Record<string, unknown> | undefined) => {

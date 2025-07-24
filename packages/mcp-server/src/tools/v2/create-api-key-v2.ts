@@ -155,6 +155,7 @@ export const tool: Tool = {
     },
     required: ['name', 'scopes'],
   },
+  annotations: {},
 };
 
 export const handler = async (client: Instantly2, args: Record<string, unknown> | undefined) => {

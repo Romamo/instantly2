@@ -41,6 +41,7 @@ export const tool: Tool = {
     },
     required: ['email', 'role'],
   },
+  annotations: {},
 };
 
 export const handler = async (client: Instantly2, args: Record<string, unknown> | undefined) => {

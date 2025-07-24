@@ -119,6 +119,7 @@ export const tool: Tool = {
     },
     required: ['organization_user_ids'],
   },
+  annotations: {},
 };
 
 export const handler = async (client: Instantly2, args: Record<string, unknown> | undefined) => {

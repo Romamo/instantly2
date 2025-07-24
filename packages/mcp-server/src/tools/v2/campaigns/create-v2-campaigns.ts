@@ -357,6 +357,7 @@ export const tool: Tool = {
     },
     required: ['campaign_schedule', 'name'],
   },
+  annotations: {},
 };
 
 export const handler = async (client: Instantly2, args: Record<string, unknown> | undefined) => {
