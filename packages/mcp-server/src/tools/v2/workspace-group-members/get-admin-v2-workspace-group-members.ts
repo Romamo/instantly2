@@ -37,7 +37,8 @@ export const tool: Tool = {
 };
 
 export const handler = async (client: Instantly2, args: Record<string, unknown> | undefined) => {
-  return asTextContentResult(await maybeFilter(args, await client.v2.workspaceGroupMembers.getAdmin()));
+  const { jq_filter } = args as any;
+  return asTextContentResult(await maybeFilter(jq_filter, await client.v2.workspaceGroupMembers.getAdmin()));
 };
 
 export default { metadata, tool, handler };

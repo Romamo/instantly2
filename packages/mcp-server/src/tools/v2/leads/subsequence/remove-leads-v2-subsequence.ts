@@ -38,8 +38,8 @@ export const tool: Tool = {
 };
 
 export const handler = async (client: Instantly2, args: Record<string, unknown> | undefined) => {
-  const body = args as any;
-  return asTextContentResult(await maybeFilter(args, await client.v2.leads.subsequence.remove(body)));
+  const { jq_filter, ...body } = args as any;
+  return asTextContentResult(await maybeFilter(jq_filter, await client.v2.leads.subsequence.remove(body)));
 };
 
 export default { metadata, tool, handler };
