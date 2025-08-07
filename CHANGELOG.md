@@ -1,5 +1,58 @@
 # Changelog
 
+## 0.1.0-alpha.4 (2025-08-07)
+
+Full Changelog: [v0.1.0-alpha.3...v0.1.0-alpha.4](https://github.com/Romamo/instantly2/compare/v0.1.0-alpha.3...v0.1.0-alpha.4)
+
+### Features
+
+* **client:** add support for endpoint-specific base URLs ([d9961f1](https://github.com/Romamo/instantly2/commit/d9961f1c59e9cab7132613d81c547c0c35540c16))
+* **mcp:** add unix socket option for remote MCP ([031b0ab](https://github.com/Romamo/instantly2/commit/031b0ab2ba2b99e00d6a6968c1e7702625b9436b))
+* **mcp:** remote server with passthru auth ([522f690](https://github.com/Romamo/instantly2/commit/522f690e1a1be48419cc8cc720264300881ddc74))
+* **mcp:** set X-Stainless-MCP header ([0c27b72](https://github.com/Romamo/instantly2/commit/0c27b72b0074f1562cf26e51ad1b67683314f8c4))
+* **mcp:** support filtering tool results by a jq expression ([daaeb5c](https://github.com/Romamo/instantly2/commit/daaeb5c8963d30986de34f0436d89966c3ef0914))
+
+
+### Bug Fixes
+
+* **ci:** release-doctor — report correct token name ([b937106](https://github.com/Romamo/instantly2/commit/b937106b5f462b1648488ae3fc5087cd5145a86e))
+* **client:** explicitly copy fetch in withOptions ([d034495](https://github.com/Romamo/instantly2/commit/d034495167d11e5a700162282dd96c77722f0e0e))
+* **client:** get fetchOptions type more reliably ([8e3eeea](https://github.com/Romamo/instantly2/commit/8e3eeea9826de5cba4d0a00f6158a716b23cc2a2))
+* **mcp:** avoid sending `jq_filter` to base API ([880a1bc](https://github.com/Romamo/instantly2/commit/880a1bc4819d1caec0f1bf50b42015faa8ea2f23))
+* **mcp:** fix bug in header handling ([bcd55bf](https://github.com/Romamo/instantly2/commit/bcd55bfd7f7e2f2b2fec1d9a3477594b5f987794))
+* **mcp:** fix tool description of jq_filter ([ba5f1bf](https://github.com/Romamo/instantly2/commit/ba5f1bfa7b2ca2c12716766a620d31f878a3c0f8))
+* **mcp:** include required section for top-level properties and support naming transformations ([fe63adf](https://github.com/Romamo/instantly2/commit/fe63adf567deffabb8164de30b1c008781eff449))
+* **mcp:** relax input type for asTextContextResult ([7f997a3](https://github.com/Romamo/instantly2/commit/7f997a344426154ab5532a118a351b0db4adf9f4))
+* **mcp:** reverse validJson capability option and limit scope ([fb0e340](https://github.com/Romamo/instantly2/commit/fb0e3407adc5a47d24a33507e0345305129da77d))
+* **mcp:** support jq filtering on cloudflare workers ([7c13d65](https://github.com/Romamo/instantly2/commit/7c13d65a8c8257eefcbf00767769c6f6c5f6053e))
+* publish script — handle NPM errors correctly ([4ecb0a8](https://github.com/Romamo/instantly2/commit/4ecb0a8ec3e72c2be446e0567d27deaf402e1f07))
+
+
+### Chores
+
+* add docs to RequestOptions type ([1a32d13](https://github.com/Romamo/instantly2/commit/1a32d130646428afa398ae8d634298baedf466e3))
+* **ci:** enable for pull requests ([4a51ac6](https://github.com/Romamo/instantly2/commit/4a51ac6c4d6d019c9125286f74930f1b45339b1d))
+* **ci:** only run for pushes and fork pull requests ([ff2f8dd](https://github.com/Romamo/instantly2/commit/ff2f8dd0d1e31d80c607d7000e843dbb8522ccf9))
+* **client:** improve path param validation ([be6c775](https://github.com/Romamo/instantly2/commit/be6c7759d04605d40289e4893893a8703373d733))
+* **client:** refactor imports ([259847c](https://github.com/Romamo/instantly2/commit/259847c63c627efda20ded2a0ec94c0a61182efe))
+* **internal:** add pure annotations, make base APIResource abstract ([26d5c9c](https://github.com/Romamo/instantly2/commit/26d5c9c7a6e3836696f3c9e5bbba3e728a4510e3))
+* **internal:** codegen related update ([3f1c3a1](https://github.com/Romamo/instantly2/commit/3f1c3a13c735dd0761f4c6c4f10ce2512502d241))
+* **internal:** codegen related update ([e5b3c07](https://github.com/Romamo/instantly2/commit/e5b3c07075c8a077da803ebf65827f9ba12cc9de))
+* **internal:** move publish config ([0ce2e3b](https://github.com/Romamo/instantly2/commit/0ce2e3b432c397734517137946f87cef9c53485a))
+* **internal:** remove redundant imports config ([aa34479](https://github.com/Romamo/instantly2/commit/aa34479f337d6f14cebba72a5d28bd1ca15cb11c))
+* make some internal functions async ([9b2b51d](https://github.com/Romamo/instantly2/commit/9b2b51d1176553a74bf4d4b24df5a3fe0414e2cd))
+* **mcp:** formatting ([2132bc0](https://github.com/Romamo/instantly2/commit/2132bc0e6843a03ec1bc9def0f2306ada9a2381d))
+* **mcp:** refactor streamable http transport ([501af41](https://github.com/Romamo/instantly2/commit/501af4153e1f7096331bd9db66b67cb21612bdae))
+* **mcp:** rework imports in tools ([a3912a4](https://github.com/Romamo/instantly2/commit/a3912a4095dcd37b92d6d8384675f0117913ddab))
+* **readme:** update badges ([366f82c](https://github.com/Romamo/instantly2/commit/366f82c5e608c4ddcc4f2542208df54b23ae6803))
+* **readme:** use better example snippet for undocumented params ([858250a](https://github.com/Romamo/instantly2/commit/858250a07ae19ba0c4ae06e6921f26d2bc97e0f2))
+* **ts:** reorder package.json imports ([8613748](https://github.com/Romamo/instantly2/commit/86137484713afc493c660eca84a0f4f83563d6d4))
+
+
+### Refactors
+
+* **types:** replace Record with mapped types ([c3e66fe](https://github.com/Romamo/instantly2/commit/c3e66fe2cddf6317562eaad09df7bc9ff776a37f))
+
 ## 0.1.0-alpha.3 (2025-06-11)
 
 Full Changelog: [v0.1.0-alpha.2...v0.1.0-alpha.3](https://github.com/Romamo/instantly2/compare/v0.1.0-alpha.2...v0.1.0-alpha.3)
