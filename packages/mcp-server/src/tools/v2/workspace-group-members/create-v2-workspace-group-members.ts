@@ -1,9 +1,9 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-import { asTextContentResult } from 'instantly2-mcp/tools/types';
+import { maybeFilter } from 'instantly2-mcp/filtering';
+import { Metadata, asTextContentResult } from 'instantly2-mcp/tools/types';
 
 import { Tool } from '@modelcontextprotocol/sdk/types.js';
-import type { Metadata } from '../../';
 import Instantly2 from 'instantly2';
 
 export const metadata: Metadata = {
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 export const tool: Tool = {
   name: 'create_v2_workspace_group_members',
   description:
-    'This endpoint allows you to send an invitation for a sub workspace to join the admin workspace. The sub workspace will be added as a sub workspace of the admin workspace only if the sub workspace owner accepts the invitation.\n\n\nRequires one of the following scopes: `workspace_group_members:create`, `workspace_group_members:all`, `all:create`, `all:all`',
+    "When using this tool, always use the `jq_filter` parameter to reduce the response size and improve performance.\n\nOnly omit if you're sure you don't need the data.\n\nThis endpoint allows you to send an invitation for a sub workspace to join the admin workspace. The sub workspace will be added as a sub workspace of the admin workspace only if the sub workspace owner accepts the invitation.\n\n\nRequires one of the following scopes: `workspace_group_members:create`, `workspace_group_members:all`, `all:create`, `all:all`\n\n# Response Schema\n```json\n{\n  $ref: '#/$defs/group_member',\n  $defs: {\n    group_member: {\n      type: 'object',\n      title: 'Workspace Group Member',\n      description: 'A member of a workspace group. You can use the endpoints within this entity to manage the members of a workspace group.',\n      properties: {\n        id: {\n          type: 'string',\n          description: 'The unique identifier of the workspace group member'\n        },\n        admin_workspace_id: {\n          type: 'string',\n          description: 'The id of the admin workspace'\n        },\n        status: {\n          type: 'string',\n          enum: [            'pending',\n            'accepted',\n            'rejected'\n          ]\n        },\n        sub_workspace_id: {\n          type: 'string',\n          description: 'The id of the sub workspace'\n        },\n        timestamp_created: {\n          type: 'string',\n          format: 'date-time'\n        },\n        timestamp_updated: {\n          type: 'string',\n          format: 'date-time'\n        },\n        admin_workspace_name: {\n          type: 'string',\n          description: 'The name of the admin workspace.'\n        },\n        sub_workspace_name: {\n          type: 'string',\n          description: 'The name of the sub workspace.'\n        }\n      },\n      required: [        'id',\n        'admin_workspace_id',\n        'status',\n        'sub_workspace_id',\n        'timestamp_created',\n        'timestamp_updated'\n      ]\n    }\n  }\n}\n```",
   inputSchema: {
     type: 'object',
     properties: {
@@ -26,13 +26,23 @@ export const tool: Tool = {
         type: 'string',
         description: 'The id of the sub workspace',
       },
+      jq_filter: {
+        type: 'string',
+        title: 'jq Filter',
+        description:
+          'A jq filter to apply to the response to include certain fields. Consult the output schema in the tool description to see the fields that are available.\n\nFor example: to include only the `name` field in every object of a results array, you can provide ".results[].name".\n\nFor more information, see the [jq documentation](https://jqlang.org/manual/).',
+      },
     },
+    required: ['sub_workspace_id'],
   },
+  annotations: {},
 };
 
 export const handler = async (client: Instantly2, args: Record<string, unknown> | undefined) => {
-  const body = args as any;
-  return asTextContentResult(await client.v2.workspaceGroupMembers.create(body));
+  const { jq_filter, ...body } = args as any;
+  return asTextContentResult(
+    await maybeFilter(jq_filter, await client.v2.workspaceGroupMembers.create(body)),
+  );
 };
 
 export default { metadata, tool, handler };

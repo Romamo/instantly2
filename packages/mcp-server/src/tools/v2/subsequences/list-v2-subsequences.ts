@@ -1,9 +1,8 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-import { asTextContentResult } from 'instantly2-mcp/tools/types';
+import { Metadata, asTextContentResult } from 'instantly2-mcp/tools/types';
 
 import { Tool } from '@modelcontextprotocol/sdk/types.js';
-import type { Metadata } from '../../';
 import Instantly2 from 'instantly2';
 
 export const metadata: Metadata = {
@@ -38,6 +37,10 @@ export const tool: Tool = {
           'The ID of the last item in the previous page - used for pagination. You can use the value of the `next_starting_after` field from the previous response.',
       },
     },
+    required: ['parent_campaign'],
+  },
+  annotations: {
+    readOnlyHint: true,
   },
 };
 

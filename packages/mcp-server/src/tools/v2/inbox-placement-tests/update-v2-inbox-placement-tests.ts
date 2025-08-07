@@ -1,9 +1,8 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-import { asTextContentResult } from 'instantly2-mcp/tools/types';
+import { Metadata, asTextContentResult } from 'instantly2-mcp/tools/types';
 
 import { Tool } from '@modelcontextprotocol/sdk/types.js';
-import type { Metadata } from '../../';
 import Instantly2 from 'instantly2';
 
 export const metadata: Metadata = {
@@ -64,7 +63,6 @@ export const tool: Tool = {
                   type: 'string',
                 },
               },
-              required: [],
             },
             when: {
               type: 'object',
@@ -220,10 +218,8 @@ export const tool: Tool = {
                 description: 'The time of day when the test will start (24-hour format).',
               },
             },
-            required: [],
           },
         },
-        required: [],
       },
       status: {
         type: 'string',
@@ -231,7 +227,9 @@ export const tool: Tool = {
         enum: [1, 2, 3],
       },
     },
+    required: ['id'],
   },
+  annotations: {},
 };
 
 export const handler = async (client: Instantly2, args: Record<string, unknown> | undefined) => {

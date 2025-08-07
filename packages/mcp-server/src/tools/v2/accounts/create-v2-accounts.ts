@@ -1,9 +1,8 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-import { asTextContentResult } from 'instantly2-mcp/tools/types';
+import { Metadata, asTextContentResult } from 'instantly2-mcp/tools/types';
 
 import { Tool } from '@modelcontextprotocol/sdk/types.js';
-import type { Metadata } from '../../';
 import Instantly2 from 'instantly2';
 
 export const metadata: Metadata = {
@@ -128,7 +127,6 @@ export const tool: Tool = {
                 description: 'Whether to send emails only on weekdays',
               },
             },
-            required: [],
           },
           increment: {
             type: 'string',
@@ -148,13 +146,27 @@ export const tool: Tool = {
             description: 'Custom tag for the account',
           },
         },
-        required: [],
       },
       warmup_custom_ftag: {
         type: 'string',
       },
     },
+    required: [
+      'email',
+      'first_name',
+      'imap_host',
+      'imap_password',
+      'imap_port',
+      'imap_username',
+      'last_name',
+      'provider_code',
+      'smtp_host',
+      'smtp_password',
+      'smtp_port',
+      'smtp_username',
+    ],
   },
+  annotations: {},
 };
 
 export const handler = async (client: Instantly2, args: Record<string, unknown> | undefined) => {
